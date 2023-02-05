@@ -1,0 +1,22 @@
+{
+  "env": {
+      "browser": false
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": ["only-warn"], // This sets blocking errors such as ts-ignores to warn, but eslint still autofixes for styling where it can
+  "rules": {
+      "comma-dangle": ["error", "always-multiline"],
+      "semi": 2,
+      "eol-last": ["error", "always"],
+      "indent": ["error", 2, { "SwitchCase": 1, "MemberExpression": 1, "ObjectExpression": 1, "ArrayExpression": 1 }],
+      "no-magic-numbers": "warn"
+  }
+}

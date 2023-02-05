@@ -1,7 +1,7 @@
 {
-  "name": "@ts-templates/node18",
+  "name": "f-handler",
   "version": "0.1.0",
-  "description": "Template for TypeScript project using Node.js v18",
+  "description": "File handler for APIs comm & S3 wrapper",
   "private": true,
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
@@ -15,14 +15,15 @@
     "node": "18.0.0"
   },
   "devDependencies": {
-    "@eslint-recommended/eslint-config-typescript": "8.0.0",
     "@tsconfig/node18": "1.0.1",
     "@types/node": "18.0.6",
-    "eslint": "8.33.0",
-    "eslint-plugin-jest": "27.2.1",
-    "jest": "29.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
     "rimraf": "4.1.2",
-    "ts-jest": "29.0.5",
     "ts-node": "10.9.1",
     "typescript": "4.9.5"
   },
